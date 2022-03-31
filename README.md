@@ -1,5 +1,7 @@
 # milberonja-SnapShotApp-SpringBootFlickr
 
+<a href="https://snapshotdemo.herokuapp.com/">See the Demo of this project</a>
+
 ![Slika](https://user-images.githubusercontent.com/34571527/161006621-0de5b73f-5a2d-4c9c-b507-667bdf7e2ca4.png)
 
 
