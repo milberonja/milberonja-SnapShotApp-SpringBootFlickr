@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+    font-size: 4em;
+    font-style: oblique;
+    font-weight: bold;
+    font-weight: 900;
+    color: #051c33;
+    margin-top: 80px;
+}
+
+form.search input[type=text] {
+    font-size: 1em;
+    padding: 10px 15px;
+    font-size: 17px;
+    border: 3px solid #d7dbdf;
+    border-right: none;
+    border-radius: 0.35em 0 0 0.35em;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    outline: none;
+}
+  
+form.search button {
+    float: left;
+    width: 19%;
+    padding: 10px;
+    background: #fcfcfc;
+    color: white;
+    font-size: 17px;
+    border: 3px solid #d7dbdf;
+    border-radius: 0 0.35em 0.35em 0;
+    border-left: none;
+    cursor: pointer;
+}
+  
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.buttonContainer {
+    padding-top: 20px;
+}
+
+div.buttonContainer button {
+    width: 100%;
+    padding: 5px;
+    background-color: #051c33;
+    color: white;
+    border: 1px solid #051c33;
+    border-radius: 3px;
+    margin-top: 17px;
+    font: 16px "Josefin Sans", Helvetica, Arial;
+    font-weight: bold;
+}
+
+.topicName h2 {
+    color: #051c33;
+    font: 32px "Josefin Sans", Helvetica, Arial;
+    margin: 52px 0 40px;
+    display: inline-block;
+    text-transform: lowercase
+}
+
+.topicName h2:first-letter {
+  	text-transform: uppercase
+}
+
+div.galleryContainer {
+    width: 350px;
+}
+div.imageContainer {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    float: left;
+}
+div.imageContainer img{
+    width: 100%;
+    height: 60vw;
+    transition: transform 2s, filter 2s ease-in-out;
+}
+div.imageContainer img:hover {
+    transform: scale(1.5);
+}
+
+div.gitHub {
+    position: relative;
+    margin-top: 100px;
+    width: 250px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    clear: left;
+}
+div.gitHub h3 {
+    margin: 1px;
+    padding: 2px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+div.gitHub h3:hover {
+    background: #c11;
+}
+
+
+@media only screen and (max-width: 599px) {
+   
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    div.buttonContainer button {
+        width: 21%;
+        border: 1px solid #051c33;
+        border-radius: 5px;
+        margin-right: 3%;
+    }
+
+    div.galleryContainer {
+        width: 600px;
+    }
+    div.imageContainer {
+        width: 45%;
+        margin-right: 5%;
+    }
+    div.imageContainer img{
+	    height: 30vw;
+	}
+    
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    div.galleryContainer {
+        width: 760px;
+    }
+    div.imageContainer {
+        width: 30%;
+        margin-right: 3.3%;
+    }
+    div.imageContainer img{
+	    height: 20vw;
+	}
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    div.gitHub {
+        width: 300px;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        transform: rotate(45deg);
+        position: fixed;
+        top: 50px;
+        right: -70px;
+        box-shadow: 5px 5px 3px grey;
+        animation-name: divRotation;
+        animation-duration: 0.5s;
+    }
+
+    div.gitHub h3 {
+        padding: 8px;
+    }
+
+    @keyframes divRotation {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(45deg);}
+    }
+
+    div.galleryContainer {
+        width: 990px;
+    }
+    div.imageContainer {
+        width: 23%;
+        margin-right: 2%;
+    }
+    div.imageContainer img{
+	    height: 15vw;
+	}
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	div.imageContainer img{
+	    height: 10vw;
+	}
+}
